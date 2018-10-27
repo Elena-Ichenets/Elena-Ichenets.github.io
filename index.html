@@ -1,23 +1,147 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>TEST HTML</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+	<head>
+		<meta charset="utf-8">
+		<title>Google profile</title>
+		<!--<link rel="stylesheet" href="css/style.css">-->
+		<style>
+			.avatarContainer {
+				text-align: center;
+				margin-top: 32px;
+				margin-bottom: 32px;
+			}
+			.avatar {
+			    vertical-align: middle;
+			    width: 180px;
+			    height: 180px;
+			    border-radius: 30%;
+			    border-width: 4px;
+			    border-style: solid;
+			    border-color: #B5B3B0;
+			}
+			.linkStyle {
+				font-size: 22px;
+				color: #2BBFFF;
+			}
+			.padding16 {
+				padding: 16px;
+			}
+			#textColor {
+				color: #FAFAFA;
+				text-align: center;
+				text-decoration: underline;
+				font-weight: bold;
+				font-size: 26px;
+			}
+			#textColorName {
+				color: #FAFAFA;
+				text-align: left;
+				font-size: 32px;
+			}
+			.buttonStyle {
+				color: #FAFAFA;
+				text-align: center;
+				font-size: 22px;
+				border-radius: 8px;
+				background-color: #FFA500;
+				padding-left: 16px;
+				padding-right: 16px;
+				margin: 4px;
+			}
+			.buttonStyle2 {
+				background-color: #0174DF;
+			}
+			.buttonStyle3 {
+				background-color: #008000;
+			}
+			.header {
+				display: flex;
+				height: 90px;
+				justify-content: center;
+  				align-items: center;
+				background-color: #3D4F5B;
+				font-size: 36px;
+				color: #FAFAFA;
+				text-align: center;
+			}
+			.content {
+				display: flex;
+			}
+			.navigation {
+				display: flex;
+				flex-grow: 1;
+				flex-direction: column;
+				align-items: stretch;
+				min-width: 160px;
+				max-width: 320px;
+				background: linear-gradient(to right, #424242 0%, #6F6F6F 100%);
+				color: #FAFAFA;
+			}
+			.body {
+				display: flex;
+				flex-direction: column;
+				align-items: stretch;
+				color: #084B8A;
+				background-color: #FAFAFA;
+			}
 
-    <main>
-      <a href="https://github.com/Elena-Ichenets">
-        <img src="img/logo.svg" width="300" height="300" alt="HTML Test">
-      </a>
+			.gg {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+			}
 
-      <h1>Test HTML</h1>
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			Header of the header in the header
+		</div>
+		<div class="content">
+			<div class="navigation">
 
-      <p>
-        <a href="https://github.com/Elena-Ichenets/Elena-Ichenets.github.io">github.com/Elena-Ichenets/Elena-Ichenets.github.io</a>
-      </p>
-    </main>
+				<div class="avatarContainer">
+					<img class="avatar" src="img/avatar.jpg" alt="Image logo">
+				</div>
 
-  </body>
+				<div class="padding16">
+					<div id="textColorName">Гугл</div>
+					<div id="textColorName">Гуглов</div>
+					<div id="textColorName">Гуглович</div>
+					<div style="background-color: #FFFF00; height: 2px;"></div>
+				</div>
+		
+
+				<div id="textColor">Могу:</div>
+
+				<div class="gg + padding16">
+					<div class="buttonStyle + buttonStyle1">Искать</div>
+					<div class="buttonStyle + buttonStyle2">Не искать</div>
+					<div class="buttonStyle + buttonStyle3">Заставить искать</div>
+				</div>
+
+				<div id="textColor">Контакты</div>
+
+				<div class="padding16">
+					<ul>
+						<li>
+							<a class="linkStyle" href="https://www.facebook.com/">Facebook</a>
+						</li>
+						<li>
+							<a class="linkStyle" href="https://www.instagram.com">Instagram</a>
+						</li>
+						<li>
+							<a class="linkStyle" href="https://twitter.com">Twitter</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="body" style="flex-grow: 6">
+				<div style="margin: 16px; background-color: #0080FF; height: 2px;"></div>
+				<div style="margin: 16px; background-color: #0080FF; height: 2px;"></div>
+				<div style="margin: 16px; background-color: #0080FF; height: 2px;"></div>
+			</div>
+		</div>
+	</body>
 </html>
