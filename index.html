@@ -3,95 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Google profile</title>
-		<!--<link rel="stylesheet" href="css/style.css">-->
-		<style>
-			.avatarContainer {
-				text-align: center;
-				margin-top: 32px;
-				margin-bottom: 32px;
-			}
-			.avatar {
-			    vertical-align: middle;
-			    width: 180px;
-			    height: 180px;
-			    border-radius: 30%;
-			    border-width: 4px;
-			    border-style: solid;
-			    border-color: #B5B3B0;
-			}
-			.linkStyle {
-				font-size: 22px;
-				color: #2BBFFF;
-			}
-			.padding16 {
-				padding: 16px;
-			}
-			#textColor {
-				color: #FAFAFA;
-				text-align: center;
-				text-decoration: underline;
-				font-weight: bold;
-				font-size: 26px;
-			}
-			#textColorName {
-				color: #FAFAFA;
-				text-align: left;
-				font-size: 32px;
-			}
-			.buttonStyle {
-				color: #FAFAFA;
-				text-align: center;
-				font-size: 22px;
-				border-radius: 8px;
-				background-color: #FFA500;
-				padding-left: 16px;
-				padding-right: 16px;
-				margin: 4px;
-			}
-			.buttonStyle2 {
-				background-color: #0174DF;
-			}
-			.buttonStyle3 {
-				background-color: #008000;
-			}
-			.header {
-				display: flex;
-				height: 90px;
-				justify-content: center;
-  				align-items: center;
-				background-color: #3D4F5B;
-				font-size: 36px;
-				color: #FAFAFA;
-				text-align: center;
-			}
-			.content {
-				display: flex;
-			}
-			.navigation {
-				display: flex;
-				flex-grow: 1;
-				flex-direction: column;
-				align-items: stretch;
-				min-width: 160px;
-				max-width: 320px;
-				background: linear-gradient(to right, #424242 0%, #6F6F6F 100%);
-				color: #FAFAFA;
-			}
-			.body {
-				display: flex;
-				flex-direction: column;
-				align-items: stretch;
-				color: #084B8A;
-				background-color: #FAFAFA;
-			}
-
-			.gg {
-				display: flex;
-				flex-direction: column;
-				align-items: flex-start;
-			}
-
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 		<div class="header">
@@ -114,10 +26,10 @@
 
 				<div id="textColor">Могу:</div>
 
-				<div class="gg + padding16">
-					<div class="buttonStyle + buttonStyle1">Искать</div>
-					<div class="buttonStyle + buttonStyle2">Не искать</div>
-					<div class="buttonStyle + buttonStyle3">Заставить искать</div>
+				<div class="buttonsConatiner + padding16">
+					<div class="buttonStyle + buttonYellow">Искать</div>
+					<div class="buttonStyle + buttonBlue">Не искать</div>
+					<div class="buttonStyle + buttonGreen">Заставить искать</div>
 				</div>
 
 				<div id="textColor">Контакты</div>
@@ -137,10 +49,36 @@
 				</div>
 			</div>
 
-			<div class="body" style="flex-grow: 6">
-				<div style="margin: 16px; background-color: #0080FF; height: 2px;"></div>
-				<div style="margin: 16px; background-color: #0080FF; height: 2px;"></div>
-				<div style="margin: 16px; background-color: #0080FF; height: 2px;"></div>
+			<div class="body + padding16">
+
+				<div>
+					<p id="bodyHeaderText">Дата рождения:</p>
+					<p>1 первого 1998 первого</p>
+					<p id="bodyHeaderText">Место рождения:</p>
+					<p>Сан-Франциско</p>
+				</div>
+
+				<div id="bodyDivider"></div>
+
+				<div>
+					<p id="bodyHeaderText">Soft skills:</p>
+					<p>- Покупка</p>
+					<p>- Продажа</p>
+					<p>- Обман</p>
+					<p>- Манипуляция информацией</p>
+				</div>
+
+				<div id="bodyDivider"></div>
+
+				<div>
+					<p id="bodyHeaderText">About:</p>
+					<p>- Смотрю с высока</p>
+					<p>- Что нужно не нахожу</p>
+					<p>- Показываю картинки котиков</p>
+				</div>
+
+				<div id="bodyDivider"></div>
+
 			</div>
 		</div>
 	</body>
